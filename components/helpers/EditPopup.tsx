@@ -468,7 +468,13 @@ export default function Edit({ user, onEdit }: any) {
             </div>
             <DialogFooter>
               <DialogClose asChild>
-                <Button variant="outline" disabled={isSubmitting}>
+                <Button
+                  variant="outline"
+                  disabled={isSubmitting}
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
+                >
                   Cancel
                 </Button>
               </DialogClose>
