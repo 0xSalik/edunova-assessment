@@ -1,72 +1,63 @@
 # EduNova Internship Assessment App
 
-Welcome to my EduNova Internship Assessment App! This project showcases a powerful and efficient Next.js application built for managing team members.
+Welcome to the EduNova Internship Assessment App! This project demonstrates a robust and efficient Next.js application designed for seamless team management.
 
-## 🚀 Features
+## 🚀 Key Features
 
-- Dashboard with welcome message
-- Fully featured People Directory page
-- Advanced table functionality using Tanstack Table
-- Responsive design with Tailwind CSS
-- Form handling with react-hook-form and Zod validation
-- Lightning-fast performance with Bun
-- State reflection in URL for enhanced user experience
+- **Dynamic Dashboard**: Welcomes users with a personalized experience.
+- **Comprehensive People Directory**: Full-featured directory with advanced table functionalities.
+- **Enhanced Table Interactions**: Implemented using Tanstack Table for sorting, filtering, and pagination.
+- **Responsive Design**: Tailored for all devices using Tailwind CSS.
+- **Form Validation**: Managed with React Hook Form and Zod for a reliable user input experience.
+- **High Performance**: Built on Bun for faster runtime and package management.
+- **Stateful URLs**: Reflects table states in URLs for a shareable and consistent user experience.
 
 ## 🛠️ Technologies Used
 
-- Next.js 14.2.5 (App Router)
-- Tanstack Table
-- React Hook Form
-- Zod
-- Tailwind CSS
-- Bun
+- **Next.js 14.2.5** (App Router)
+- **Tanstack Table** for advanced table management
+- **React Hook Form** for form handling
+- **Zod** for schema validation
+- **Tailwind CSS** for responsive design
+- **PocketBase** for data storage and backend services
+- **Bun** for enhanced performance
 
-## 🏗️ Architecture
-
-This app is built with a focus on speed and simplicity. Here are some key architectural decisions:
+## 🏗️ Architecture Overview
 
 ### API and Data Storage
 
-I opted for a lightweight approach, using simple JSON files for data population. While I initially considered MongoDB, I realized that for an assessment app, introducing models and setting up remote connections over the Vercel edge network would unnecessarily slow down the app.
+In this project, I opted for PocketBase, a lightweight, self-hosted backend, as the primary data store. PocketBase offers a flexible, scalable, and efficient solution for managing data, aligning with the project's need for real-time updates and relational data handling without the overhead of a more complex database system.
 
-### Bun for Enhanced Performance
+### Performance Optimization with Bun
 
-I chose Bun as the JavaScript runtime and package manager for this project. Bun's superior speed compared to npm significantly improves build times and overall development experience.
+Bun was selected as the JavaScript runtime and package manager due to its superior speed and efficiency. This choice significantly improves build times and overall performance, enhancing the development experience and application responsiveness.
 
 ## 🌟 Unique Aspects
 
-1. **URL State Reflection**: The app reflects search, filter, sorting, and pagination states in the URL, enhancing user experience and enabling shareable table states.
-
-2. **Advanced Sorting with Tanstack**: Implemented a sophisticated sorting system using Tanstack Table, with the sorting state reflected in URL parameters for persistence across page reloads.
-
-3. **Global Search**: The search bar performs a substring match across all fields, instantly filtering the table and updating the URL.
-
-4. **Optimized Performance**: By using JSON files and Bun, the app achieves impressive speed without sacrificing functionality.
-
-5. **Responsive Design**: Tailwind CSS ensures a seamless experience across various device sizes.
+1. **URL State Reflection**: Search, filter, sorting, and pagination states are reflected in the URL, ensuring a consistent and shareable experience.
+2. **Advanced Sorting and Filtering**: Tanstack Table provides sophisticated sorting and filtering, with state persistence across page reloads via URL parameters.
+3. **Global Search Functionality**: Instantly filters the directory with substring matching across all fields, with results reflected in the URL.
+4. **Optimized Performance**: Leveraging PocketBase and Bun, the app delivers high-speed performance without compromising functionality.
+5. **Responsive UI**: Tailwind CSS ensures the application is visually appealing and fully responsive across all devices.
 
 ## 🚀 Getting Started
 
-1. Clone the repository
-2. Install dependencies with `bun install`
-3. Run the development server with `bun run dev`
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+1. **Clone the Repository**: `git clone https://github.com/0xSalik/edunova-assessment`
+2. **Install Dependencies**: `bun install`
+3. **Run the Development Server**: `bun run dev`
+4. **Open in Browser**: [http://localhost:3000](http://localhost:3000)
 
 ## 🎨 Design Philosophy
 
-This app embraces a minimalist yet powerful approach. The clean UI, coupled with advanced features, creates an experience that's both visually appealing and highly functional. The thoughtful use of Tailwind CSS ensures responsiveness across devices.
+The EduNova Internship Assessment App embodies a minimalist yet powerful design approach. The clean and intuitive UI, powered by Tailwind CSS, is both aesthetically pleasing and functionally rich. This focus on user experience ensures that the app is as efficient as it is effective.
 
 ## 🔗 State Management and URL Synchronization
 
-A standout feature of this app is its sophisticated state management system that synchronizes with the URL. This implementation:
+A standout feature of this application is its advanced state management system, synchronized with the URL. This design:
 
 - Enables shareable and bookmarkable table configurations
-- Enhances navigation and user experience
-- Maintains table state across page reloads
-- Demonstrates a deep understanding of React hooks and Next.js routing
+- Enhances user navigation and experience
+- Maintains state across sessions and page reloads
+- Demonstrates advanced proficiency in React hooks and Next.js routing
 
-This feature showcases advanced front-end development skills and a user-centric approach to web application design.
-
----
-
-This project goes beyond merely completing an assessment. It's a demonstration of best practices in Next.js development, state management, and user interface design. The implementation of Tanstack Table with URL-based state management particularly highlights the ability to create efficient, user-friendly, and scalable web applications.
+This project exemplifies modern web development best practices, showcasing the ability to create efficient, user-friendly, and scalable applications using the latest technologies.
