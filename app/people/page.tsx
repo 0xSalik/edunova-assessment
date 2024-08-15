@@ -8,7 +8,7 @@
  * minimalist design philosophy for a dashoard app.
  */
 
-import { useState, useEffect, useMemo, useCallback } from "react";
+import { useState, useEffect, useMemo, useCallback, Suspense } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -53,10 +53,29 @@ type Member = {
 type SortKey = "name" | "status" | "role" | "email";
 type SortOrder = "asc" | "desc";
 
+function SearchParamsWrapper({ children }: any) {
+  const searchParams = useSearchParams();
+  return children(searchParams);
+}
+
+function SearchParamsComponent({ children }: any) {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <SearchParamsWrapper>{children}</SearchParamsWrapper>
+    </Suspense>
+  );
+}
 export default function People() {
+  return (
+    <SearchParamsComponent>
+      {(searchParams: any) => <PeopleContent searchParams={searchParams} />}
+    </SearchParamsComponent>
+  );
+}
+
+function PeopleContent({ searchParams }: any) {
   const [members, setMembers] = useState<Member[]>([]);
   const router = useRouter();
-  const searchParams = useSearchParams();
 
   const [loading, setLoading] = useState(true);
   const [sorting, setSorting] = useState<SortingState>(() => {
