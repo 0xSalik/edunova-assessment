@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import fs from "fs/promises";
 import path from "path";
 
-const dataFilePath = path.join(process.cwd(), "app/api/teams.json");
+const dataFilePath = path.join(process.cwd(), "tmp/teams.json");
 
 export async function GET() {
   const data = await fs.readFile(dataFilePath, "utf8");

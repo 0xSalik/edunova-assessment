@@ -1,12 +1,16 @@
 [
   {
-    "name": "Olivia Bitsui",
+    "name": "Olivia Rhye",
     "username": "@olivia",
     "email": "olivia@piedpiper.com",
     "workEmail": "olivia@piedpiper.com",
     "role": "Sales Representative",
     "status": "Active",
-    "teams": ["Marketing"],
+    "teams": [
+      "Marketing",
+      "Engineering",
+      "Product"
+    ],
     "dateOfBirth": "2000-02-02",
     "gender": "Female",
     "nationality": "Indian",
@@ -29,7 +33,9 @@
     "workEmail": "liam@piedpiper.com",
     "role": "Software Engineer",
     "status": "Active",
-    "teams": ["Engineering"],
+    "teams": [
+      "Engineering"
+    ],
     "dateOfBirth": "1995-03-14",
     "gender": "Male",
     "nationality": "American",
@@ -52,7 +58,9 @@
     "workEmail": "emma@piedpiper.com",
     "role": "Product Manager",
     "status": "Active",
-    "teams": ["Product"],
+    "teams": [
+      "Product"
+    ],
     "dateOfBirth": "1990-07-22",
     "gender": "Female",
     "nationality": "Chinese",
@@ -75,7 +83,9 @@
     "workEmail": "noah@piedpiper.com",
     "role": "Data Scientist",
     "status": "Active",
-    "teams": ["Data"],
+    "teams": [
+      "Data"
+    ],
     "dateOfBirth": "1988-05-11",
     "gender": "Male",
     "nationality": "Indian",
@@ -98,7 +108,9 @@
     "workEmail": "james@piedpiper.com",
     "role": "Operations Manager",
     "status": "Active",
-    "teams": ["Operations"],
+    "teams": [
+      "Operations"
+    ],
     "dateOfBirth": "1985-01-25",
     "gender": "Male",
     "nationality": "British",
@@ -121,7 +133,9 @@
     "workEmail": "isabella@piedpiper.com",
     "role": "UX Designer",
     "status": "Active",
-    "teams": ["Design"],
+    "teams": [
+      "Design"
+    ],
     "dateOfBirth": "1998-04-10",
     "gender": "Female",
     "nationality": "Italian",
@@ -144,7 +158,9 @@
     "workEmail": "mason@piedpiper.com",
     "role": "HR Specialist",
     "status": "Active",
-    "teams": ["Human Resources"],
+    "teams": [
+      "Human Resources"
+    ],
     "dateOfBirth": "1987-06-28",
     "gender": "Male",
     "nationality": "Korean",
@@ -167,7 +183,9 @@
     "workEmail": "ava@piedpiper.com",
     "role": "Financial Analyst",
     "status": "Active",
-    "teams": ["Finance"],
+    "teams": [
+      "Finance"
+    ],
     "dateOfBirth": "1993-11-02",
     "gender": "Female",
     "nationality": "Canadian",
@@ -190,7 +208,9 @@
     "workEmail": "elijah@piedpiper.com",
     "role": "Legal Advisor",
     "status": "Active",
-    "teams": ["Legal"],
+    "teams": [
+      "Legal"
+    ],
     "dateOfBirth": "1980-12-20",
     "gender": "Male",
     "nationality": "American",
