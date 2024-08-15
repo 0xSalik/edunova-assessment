@@ -35,7 +35,7 @@ export default function Notifications() {
   function openNotification() {
     toast({
       title: "👋 Hi EduNova Team.",
-      description: `You can find the source code for this website at https://github.com/0xSalik/edunova-assessment. Hope you like this project. Thank You!!`,
+      description: `You can find the source code for this website by clicking the code icon in the header (top-right). Hope you like this project. Thank You!!`,
     });
   }
 
