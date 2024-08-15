@@ -1,14 +1,13 @@
 "use client";
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 import { Button } from "../ui/button";
-import { Bell } from "lucide-react";
 import { ModeToggle } from "@/components/ui/ThemeToggle";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { Code } from "lucide-react";
 import { LayoutGridIcon, UsersIcon } from "../ui/icons";
 import UserInfo from "../helpers/UserInfo";
 import Notifications from "@/components/helpers/Notifications";
@@ -61,6 +60,14 @@ export default function Header() {
           <Notifications />
           <UserInfo />
           <ModeToggle />
+          <Button variant={"outline"} size={"icon"}>
+            <Link
+              href="https://github.com/0xSalik/edunova-assessment"
+              target="_blank"
+            >
+              <Code className="w-4 h-4 p-0" />
+            </Link>
+          </Button>
         </div>
       </div>
     </header>
