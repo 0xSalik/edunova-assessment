@@ -117,7 +117,7 @@ export default function Edit({ user, onEdit }: any) {
       publications: user.publications,
     },
   });
-
+  const [av, setAv] = useState(user.avatar);
   async function onSubmit(values: z.infer<typeof FormSchema>) {
     setIsSubmitting(true);
     try {
@@ -144,6 +144,7 @@ export default function Edit({ user, onEdit }: any) {
   }
   const handleChangePhoto = (imageUrl: string) => {
     form.setValue("avatar", imageUrl);
+    setAv(imageUrl);
   };
 
   const handleRemovePhoto = () => {
@@ -172,7 +173,7 @@ export default function Edit({ user, onEdit }: any) {
           </DialogHeader>
           <div className="flex justify-center my-4">
             <Avatar className="w-24 h-24">
-              <AvatarImage src={user.avatar} alt="Profile" />
+              <AvatarImage src={av} alt="Profile" />
               <AvatarFallback>{user.name.charAt(0)}</AvatarFallback>
             </Avatar>
           </div>

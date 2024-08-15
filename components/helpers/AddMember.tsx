@@ -73,6 +73,7 @@ const genderOptions = ["Male", "Female", "Other"];
 
 export default function AddMember({ onAddMember }: any) {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [av, setAv] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const { toast } = useToast();
   const roleOptions = [
@@ -118,6 +119,7 @@ export default function AddMember({ onAddMember }: any) {
   const [isImageDialogOpen, setIsImageDialogOpen] = useState(false);
   const handleAddPhoto = (imageUrl: string) => {
     form.setValue("avatar", imageUrl);
+    setAv(imageUrl);
   };
 
   const handleRemovePhoto = () => {
@@ -175,7 +177,7 @@ export default function AddMember({ onAddMember }: any) {
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
               <div className="flex items-center justify-center mb-4">
                 <Avatar className="h-24 w-24">
-                  <AvatarImage src="" alt="Member photo" />
+                  <AvatarImage src={av} alt="Member photo" />
                   <AvatarFallback>MP</AvatarFallback>
                 </Avatar>
               </div>
