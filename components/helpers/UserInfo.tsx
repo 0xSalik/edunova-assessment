@@ -1,6 +1,7 @@
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
+import { toast } from "../ui/use-toast";
 
 export default function UserInfo({ user }: any) {
   return (
@@ -32,7 +33,18 @@ export default function UserInfo({ user }: any) {
           <p className="flex gap-2">
             <p className="font-semibold">Role: </p> Admin
           </p>
-          <Button variant={"destructive"} className="w-15 h-7 mt-2 text-sm">
+          <Button
+            variant={"destructive"}
+            onClick={() => {
+              toast({
+                title: "🎈 Hah! Gotcha.",
+                description:
+                  "Can't sign out of the app. You're stuck as Jane Doe forever 😁",
+                variant: "default",
+              });
+            }}
+            className="w-15 h-7 mt-2 text-sm"
+          >
             Sign Out
           </Button>
         </div>
