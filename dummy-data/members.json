@@ -1,0 +1,229 @@
+[
+  {
+    "name": "Olivia Rhye",
+    "username": "@olivia",
+    "email": "olivia@piedpiper.com",
+    "workEmail": "olivia@piedpiper.com",
+    "role": "Sales Representative",
+    "status": "Active",
+    "teams": [
+      "Marketing",
+      "Engineering",
+      "Product"
+    ],
+    "dateOfBirth": "2000-02-02",
+    "gender": "Female",
+    "nationality": "Indian",
+    "contactNo": "88888888888",
+    "publications": [
+      {
+        "title": "adasdsa",
+        "journal": "dadsadad",
+        "year": 2024,
+        "abstract": "dadada"
+      }
+    ],
+    "id": 1,
+    "avatar": "https://i.pravatar.cc/300?img=1"
+  },
+  {
+    "name": "Liam O'Connor",
+    "username": "@liam",
+    "email": "liam@piedpiper.com",
+    "workEmail": "liam@piedpiper.com",
+    "role": "Software Engineer",
+    "status": "Active",
+    "teams": [
+      "Engineering"
+    ],
+    "dateOfBirth": "1995-03-14",
+    "gender": "Male",
+    "nationality": "American",
+    "contactNo": "99999999999",
+    "publications": [
+      {
+        "title": "AI in the Modern World",
+        "journal": "Tech Innovations",
+        "year": 2023,
+        "abstract": "Exploring the impact of AI on industries."
+      }
+    ],
+    "id": 2,
+    "avatar": "https://i.pravatar.cc/300?img=2"
+  },
+  {
+    "name": "Emma Chen",
+    "username": "@emma",
+    "email": "emma@piedpiper.com",
+    "workEmail": "emma@piedpiper.com",
+    "role": "Product Manager",
+    "status": "Active",
+    "teams": [
+      "Product"
+    ],
+    "dateOfBirth": "1990-07-22",
+    "gender": "Female",
+    "nationality": "Chinese",
+    "contactNo": "77777777777",
+    "publications": [
+      {
+        "title": "Product Lifecycle Management",
+        "journal": "Business Review",
+        "year": 2022,
+        "abstract": "An overview of product lifecycle strategies."
+      }
+    ],
+    "id": 3,
+    "avatar": "https://i.pravatar.cc/300?img=3"
+  },
+  {
+    "name": "Noah Patel",
+    "username": "@noah",
+    "email": "noah@piedpiper.com",
+    "workEmail": "noah@piedpiper.com",
+    "role": "Data Scientist",
+    "status": "Active",
+    "teams": [
+      "Data"
+    ],
+    "dateOfBirth": "1988-05-11",
+    "gender": "Male",
+    "nationality": "Indian",
+    "contactNo": "66666666666",
+    "publications": [
+      {
+        "title": "Big Data Analytics",
+        "journal": "Data Science Monthly",
+        "year": 2021,
+        "abstract": "The power of big data in decision making."
+      }
+    ],
+    "id": 4,
+    "avatar": "https://i.pravatar.cc/300?img=4"
+  },
+  {
+    "name": "James Thompson",
+    "username": "@james",
+    "email": "james@piedpiper.com",
+    "workEmail": "james@piedpiper.com",
+    "role": "Operations Manager",
+    "status": "Active",
+    "teams": [
+      "Operations"
+    ],
+    "dateOfBirth": "1985-01-25",
+    "gender": "Male",
+    "nationality": "British",
+    "contactNo": "44444444444",
+    "publications": [
+      {
+        "title": "Operational Efficiency",
+        "journal": "Business Insights",
+        "year": 2023,
+        "abstract": "Improving operational processes for better efficiency."
+      }
+    ],
+    "id": 6,
+    "avatar": "https://i.pravatar.cc/300?img=5"
+  },
+  {
+    "name": "Isabella Rossi",
+    "username": "@isabella",
+    "email": "isabella@piedpiper.com",
+    "workEmail": "isabella@piedpiper.com",
+    "role": "UX Designer",
+    "status": "Active",
+    "teams": [
+      "Design"
+    ],
+    "dateOfBirth": "1998-04-10",
+    "gender": "Female",
+    "nationality": "Italian",
+    "contactNo": "33333333333",
+    "publications": [
+      {
+        "title": "User-Centered Design",
+        "journal": "Design Innovations",
+        "year": 2022,
+        "abstract": "Focusing on user experience in design processes."
+      }
+    ],
+    "id": 7,
+    "avatar": "https://i.pravatar.cc/300?img=6"
+  },
+  {
+    "name": "Mason Kim",
+    "username": "@mason",
+    "email": "mason@piedpiper.com",
+    "workEmail": "mason@piedpiper.com",
+    "role": "HR Specialist",
+    "status": "Active",
+    "teams": [
+      "Human Resources"
+    ],
+    "dateOfBirth": "1987-06-28",
+    "gender": "Male",
+    "nationality": "Korean",
+    "contactNo": "22222222222",
+    "publications": [
+      {
+        "title": "Employee Engagement",
+        "journal": "HR Journal",
+        "year": 2020,
+        "abstract": "Strategies for improving employee engagement."
+      }
+    ],
+    "id": 8,
+    "avatar": "https://i.pravatar.cc/300?img=7"
+  },
+  {
+    "name": "Ava Smith",
+    "username": "@ava",
+    "email": "ava@piedpiper.com",
+    "workEmail": "ava@piedpiper.com",
+    "role": "Financial Analyst",
+    "status": "Active",
+    "teams": [
+      "Finance"
+    ],
+    "dateOfBirth": "1993-11-02",
+    "gender": "Female",
+    "nationality": "Canadian",
+    "contactNo": "11111111111",
+    "publications": [
+      {
+        "title": "Financial Forecasting",
+        "journal": "Finance Today",
+        "year": 2021,
+        "abstract": "Techniques for accurate financial forecasting."
+      }
+    ],
+    "id": 9,
+    "avatar": "https://i.pravatar.cc/300?img=8"
+  },
+  {
+    "name": "Elijah Johnson",
+    "username": "@elijah",
+    "email": "elijah@piedpiper.com",
+    "workEmail": "elijah@piedpiper.com",
+    "role": "Legal Advisor",
+    "status": "Active",
+    "teams": [
+      "Legal"
+    ],
+    "dateOfBirth": "1980-12-20",
+    "gender": "Male",
+    "nationality": "American",
+    "contactNo": "33333333333",
+    "publications": [
+      {
+        "title": "Corporate Law in the Digital Age",
+        "journal": "Legal Perspectives",
+        "year": 2023,
+        "abstract": "The challenges of corporate law in a digital world."
+      }
+    ],
+    "id": 10,
+    "avatar": "https://i.pravatar.cc/300?img=9"
+  }
+]
