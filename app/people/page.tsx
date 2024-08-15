@@ -15,6 +15,7 @@ import { Button } from "@/components/ui/button";
 import { FilterPopover } from "@/components/helpers/FilterPopover";
 import { useToast } from "@/components/ui/use-toast";
 import LoadingSpinner from "@/components/ui/LoadingSpinner";
+import { useRouter, useSearchParams } from "next/navigation";
 
 import { ChevronUpIcon, ChevronDownIcon } from "@/components/ui/icons";
 import {
@@ -54,8 +55,17 @@ type SortOrder = "asc" | "desc";
 
 export default function People() {
   const [members, setMembers] = useState<Member[]>([]);
+  const router = useRouter();
+  const searchParams = useSearchParams();
+
   const [loading, setLoading] = useState(true);
-  const [sorting, setSorting] = useState<SortingState>([]);
+  const [sorting, setSorting] = useState<SortingState>(() => {
+    const sortKey = searchParams.get("sortKey");
+    const sortOrder = searchParams.get("sortOrder");
+    return sortKey && sortOrder
+      ? [{ id: sortKey, desc: sortOrder === "desc" }]
+      : [];
+  });
   const [searchTerm, setSearchTerm] = useState("");
   const [sortConfig, setSortConfig] = useState<{
     key: SortKey;
@@ -83,6 +93,29 @@ export default function People() {
   useEffect(() => {
     fetchMembers();
   }, [fetchMembers]);
+
+  useEffect(() => {
+    const newSearchParams = new URLSearchParams();
+    if (searchTerm) newSearchParams.set("query", searchTerm);
+    filters.roles.forEach((role: any) => newSearchParams.append("role", role));
+    filters.teams.forEach((team: any) => newSearchParams.append("team", team));
+    if (sortConfig) {
+      newSearchParams.set("sortKey", sortConfig.key);
+      newSearchParams.set("sortOrder", sortConfig.order);
+    }
+    router.push(`/people?${newSearchParams.toString()}`, { scroll: false });
+  }, [searchTerm, filters, sortConfig, router]);
+  useEffect(() => {
+    const newSearchParams = new URLSearchParams(searchParams.toString());
+    if (sorting.length > 0) {
+      newSearchParams.set("sortKey", sorting[0].id);
+      newSearchParams.set("sortOrder", sorting[0].desc ? "desc" : "asc");
+    } else {
+      newSearchParams.delete("sortKey");
+      newSearchParams.delete("sortOrder");
+    }
+    router.push(`/people?${newSearchParams.toString()}`, { scroll: false });
+  }, [sorting, router, searchParams]);
 
   const sortedMembers = useMemo(() => {
     let sortableMembers = [...members];
@@ -186,6 +219,15 @@ export default function People() {
       });
     }
   };
+
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchTerm(e.target.value);
+  };
+
+  const handleFilterChange = (newFilters: any) => {
+    setFilters(newFilters);
+  };
+
   const columnHelper = createColumnHelper<Member>();
 
   const columns = [
@@ -340,10 +382,10 @@ export default function People() {
               placeholder="Search"
               className="w-full md:w-64"
               value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
+              onChange={handleSearchChange}
             />
             <div className="flex gap-2 w-full md:w-auto">
-              <FilterPopover onFilterChange={setFilters} />
+              <FilterPopover onFilterChange={handleFilterChange} />
               <AddMember onAddMember={handleAddMember} />
             </div>
           </div>
