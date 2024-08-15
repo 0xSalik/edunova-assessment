@@ -19,8 +19,16 @@ interface FilterState {
 }
 
 const roles = [
-  "Product Designer",
+  "Sales Representative",
+  "Software Engineer",
   "Product Manager",
+  "Data Scientist",
+  "Marketing Manager",
+  "Operations Manager",
+  "UX Designer",
+  "HR Specialist",
+  "Financial Analyst",
+  "Legal Advisor",
   "Frontend Developer",
   "Backend Developer",
 ];

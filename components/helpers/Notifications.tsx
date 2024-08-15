@@ -34,9 +34,8 @@ export default function Notifications() {
 
   function openNotification() {
     toast({
-      title: "🔃 Notifications can not be opened.",
-      description:
-        "This website was made for an assessment. Opening individual notifications is not possible.",
+      title: "👋 Hi EduNova Team.",
+      description: `You can find the source code for this website at https://github.com/0xSalik/edunova-assessment. Hope you like this project. Thank You!!`,
     });
   }
 
